@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-rest-api
+spec:
+  containers:
+  - name: rest-api
+    image: docker.io/alanjino/sampleapp:latest
+    ports:
+    - containerPort: 8080
